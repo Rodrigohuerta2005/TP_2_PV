@@ -19,48 +19,7 @@ public class Producto {
 			ELECTROHOGAR,
 			HERRAMIENTAS;
 		}
-		public Producto () {}
 		
-		public Producto(String codigo, String descripcion, Double precio_Unitario, OrigenFabricacion origenFabricacion,
-				Categoria categoria) {
-			super();
-			this.codigo = codigo;
-			this.descripcion = descripcion;
-			this.precio_Unitario = precio_Unitario;
-			this.origenFabricacion = origenFabricacion;
-			this.categoria = categoria;
-		}
-
-		public String getCodigo() {
-			return codigo;
-		}
-		public void setCodigo(String codigo) {
-			this.codigo = codigo;
-		}
-		public String getDescripcion() {
-			return descripcion;
-		}
-		public void setDescripcion(String descripcion) {
-			this.descripcion = descripcion;
-		}
-		public Double getPrecio_Unitario() {
-			return precio_Unitario;
-		}
-		public void setPrecio_Unitario(Double precio_Unitario) {
-			this.precio_Unitario = precio_Unitario;
-		}
-		public OrigenFabricacion getOrigenFabricacion() {
-			return origenFabricacion;
-		}
-		public void setOrigenFabricacion(OrigenFabricacion origenFabricacion) {
-			this.origenFabricacion = origenFabricacion;
-		}
-		public Categoria getCategoria() {
-			return categoria;
-		}
-		public void setCategoria(Categoria categoria) {
-			this.categoria = categoria;
-		}
 		
 
 
