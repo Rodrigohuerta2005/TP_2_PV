@@ -1,20 +1,22 @@
 package ar.edu.unju.fi.ejercicio2.model;
 
-import ar.edu.unju.fi.ejercicio2.constantes.Mes;
+import ar.edu.unju.fi.ejercicio_2.constantes.Mes;
 
 public class Efemeride {
 	private String codigo;
-	private Mes  mes;
+	private Mes mes;
 	private int dia;
 	private String detalle;
 	
-	public Efemeride () {}
-
+	public Efemeride () {}; 
 	
+	
+
 	@Override
 	public String toString() {
 		return "Efemeride [codigo=" + codigo + ", mes=" + mes + ", dia=" + dia + ", detalle=" + detalle + "]";
 	}
+
 
 
 	public String getCodigo() {
@@ -47,7 +49,7 @@ public class Efemeride {
 
 	public void setDetalle(String detalle) {
 		this.detalle = detalle;
-	};
-	
+	}
+
 	
 }
