@@ -6,32 +6,21 @@ public class Producto {
 	private Double precio_Unitario;
 	private OrigenFabricacion origenFabricacion;
 	private Categoria categoria;
-	
-		public enum OrigenFabricacion {
+	public enum OrigenFabricacion {
 			ARGENTINA,
 			CHINA,
 			BRASIL,
 			URUGUAY;
 	    }
-		public enum Categoria {
+	public enum Categoria {
 			TELEFONIA,
 			INFORMATICA,
 			ELECTROHOGAR,
 			HERRAMIENTAS;
 		}
-		Producto(){}
-			
-		@Override
-		public String toString() {
-			return "Producto [codigo=" + codigo + ", descripcion=" + descripcion + ", precio_Unitario="
-					+ precio_Unitario + ", origenFabricacion=" + origenFabricacion + ", categoria=" + categoria
-					+ ", getCodigo()=" + getCodigo() + ", getDescripcion()=" + getDescripcion()
-					+ ", getPrecio_Unitario()=" + getPrecio_Unitario() + ", getOrigenFabricacion()="
-					+ getOrigenFabricacion() + ", getCategoria()=" + getCategoria() + ", getClass()=" + getClass()
-					+ ", hashCode()=" + hashCode() + ", toString()=" + super.toString() + "]";
-		}
+	public Producto(){};
 
-		public Producto(String codigo, String descripcion, Double precio_Unitario, OrigenFabricacion origenFabricacion,
+	public Producto(String codigo, String descripcion, Double precio_Unitario, OrigenFabricacion origenFabricacion,
 				Categoria categoria) {
 			super();
 			this.codigo = codigo;
@@ -39,6 +28,16 @@ public class Producto {
 			this.precio_Unitario = precio_Unitario;
 			this.origenFabricacion = origenFabricacion;
 			this.categoria = categoria;
+		}
+		@Override
+		public String toString() {
+			
+			return "Producto [codigo=" + codigo + ", descripcion=" + descripcion + ", precio_Unitario="
+					+ precio_Unitario + ", origenFabricacion=" + origenFabricacion + ", categoria=" + categoria
+					+ ", getCodigo()=" + getCodigo() + ", getDescripcion()=" + getDescripcion()
+					+ ", getPrecio_Unitario()=" + getPrecio_Unitario() + ", getOrigenFabricacion()="
+					+ getOrigenFabricacion() + ", getCategoria()=" + getCategoria() + ", getClass()=" + getClass()
+					+ ", hashCode()=" + hashCode() + ", toString()=" + super.toString() + "]";
 		}
 
 		public String getCodigo() {
@@ -70,14 +69,6 @@ public class Producto {
 		}
 		public void setCategoria(Categoria categoria) {
 			this.categoria = categoria;
-		}; 
-		
-		
-
-
-
-
-
-
+		}
 }
 
